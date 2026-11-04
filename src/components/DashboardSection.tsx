@@ -292,15 +292,13 @@ export const DashboardSection: React.FC<DashboardSectionProps> = ({ records }) =
     return '';
   };
 
-  // Determine critical status
+  // Determine status according to business thresholds:
+  // - Crítica: menos de 70 (< 70)
+  // - Revisión: de 70 a 84,99 (70 <= total < 85)
+  // - Aprobado: 85 en adelante (>= 85)
   const getRecordStatus = (r: SavedAuditRecord): 'crit' | 'rev' | 'ok' => {
     const total = Number(r.total) || 0;
-    const hasCritDev = (r.desvios || []).some(
-      d => d.n === '2.6' || d.texto?.toLowerCase().includes('vencimiento') || d.texto?.toLowerCase().includes('crítico')
-    );
-    const hasCritFail = (r as any).critico || hasCritDev;
-
-    if (hasCritFail || total < THR.critica) return 'crit';
+    if (total < THR.critica) return 'crit';
     if (total >= THR.ok) return 'ok';
     return 'rev';
   };
@@ -620,7 +618,7 @@ export const DashboardSection: React.FC<DashboardSectionProps> = ({ records }) =
             </div>
 
             <div className="dash-tile-foot">
-              <span className="dash-tile-sub">menos de {THR.critica} o ítem 2.6</span>
+              <span className="dash-tile-sub">menos de {THR.critica} puntos</span>
               <span className="dash-tile-pct num">
                 {counts.totalStores ? Math.round((counts.crit / counts.totalStores) * 100) : 0}%
               </span>
@@ -783,7 +781,7 @@ export const DashboardSection: React.FC<DashboardSectionProps> = ({ records }) =
               <span>Se toma la última auditoría de cada tienda en el período.</span>
               <span><b style={{ color: 'var(--ok)' }}>Aprobado</b>: {THR.ok} o más</span>
               <span><b style={{ color: 'var(--warn)' }}>Revisión</b>: {THR.critica} a {f2(THR.ok - 0.01)}</span>
-              <span><b style={{ color: 'var(--bad)' }}>Crítica</b>: menos de {THR.critica} o falla ítem 2.6</span>
+              <span><b style={{ color: 'var(--bad)' }}>Crítica</b>: menos de {THR.critica}</span>
             </div>
           </div>
         )}
