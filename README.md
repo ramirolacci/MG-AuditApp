@@ -88,6 +88,52 @@ La interfaz fue diseñada bajo un **Pure Dark Mode** de nivel industrial, conceb
 
 ---
 
+## 🚀 Instalación y Puesta en Marcha
+
+### Prerrequisitos
+- **Node.js** (versión 18.0 o superior recomendada)
+- Gestor de paquetes: **npm**, **pnpm** o **yarn**
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/MiGusto-AuditApp.git
+cd MiGusto-AuditApp
+```
+
+### 2. Instalar dependencias
+```bash
+npm install
+```
+
+### 3. Configuración de Variables de Entorno
+Crea un archivo `.env` en la raíz del proyecto con tus credenciales de Supabase:
+
+```env
+VITE_SUPABASE_URL=https://tu-proyecto.supabase.co
+VITE_SUPABASE_ANON_KEY=tu-anon-key-aqui
+```
+
+> [!NOTE]
+> Para la estructura de tablas y políticas de seguridad (RLS), ejecuta el script [`supabase_schema.sql`](supabase_schema.sql) en el **SQL Editor** de tu panel de Supabase.
+
+### 4. Iniciar en modo desarrollo
+```bash
+npm run dev
+```
+La aplicación quedará disponible en el navegador (por defecto en `http://localhost:5173`).
+
+### 5. Compilar para producción
+Para generar el build optimizado de producción:
+```bash
+npm run build
+```
+Para previsualizar localmente la versión compilada:
+```bash
+npm run preview
+```
+
+---
+
 <div align="center">
   <sub>Desarrollado para el Departamento de Operaciones y Calidad de <strong>Mi Gusto</strong>.</sub>
 </div>
