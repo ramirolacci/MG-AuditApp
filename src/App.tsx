@@ -108,8 +108,8 @@ export function App() {
   };
 
   const handleStartAudit = () => {
-    if (!state.fields.f_tienda.trim() || !state.fields.f_auditor.trim()) {
-      flashMessage('Por favor completá los campos obligatorios: Tienda y Auditor/a', true);
+    if (!state.fields.f_tienda.trim() || !state.fields.f_auditor.trim() || !state.fields.f_fecha.trim()) {
+      flashMessage('Por favor completá los campos obligatorios: Tienda, Auditor/a y Fecha', true);
       return;
     }
     setCurrentSegment(0);

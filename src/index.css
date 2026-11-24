@@ -6998,15 +6998,15 @@ html, body {
 }
 
 /* ==========================================================================
-   CHANGE PASSWORD MODAL (PREMIUM DARK GLASS DESIGN)
+   CHANGE PASSWORD MODAL (MATCHING PROJECT DESIGN SYSTEM)
    ========================================================================== */
 .change-pwd-backdrop {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: rgba(4, 7, 15, 0.78);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(8, 14, 26, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7014,11 +7014,11 @@ html, body {
 }
 
 .change-pwd-card {
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(245, 158, 11, 0.15);
-  border-radius: 24px;
-  padding: 28px;
+  background: #131b2e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 26px 26px 22px 26px;
   max-width: 440px;
   width: 100%;
   position: relative;
@@ -7057,15 +7057,15 @@ html, body {
 }
 
 .change-pwd-icon-wrap {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  box-shadow: 0 8px 18px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
   flex-shrink: 0;
 }
 
@@ -7079,9 +7079,9 @@ html, body {
 .change-pwd-title {
   margin: 0;
   font-size: 1.15rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #ffffff;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   line-height: 1.25;
 }
 
@@ -7114,7 +7114,7 @@ html, body {
 
 .change-pwd-alert {
   padding: 11px 14px;
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: 0.8rem;
   display: flex;
   align-items: center;
@@ -7148,10 +7148,10 @@ html, body {
 }
 
 .change-pwd-label {
-  font-size: 0.73rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
   color: #cbd5e1;
 }
 
@@ -7163,9 +7163,9 @@ html, body {
 
 .change-pwd-input {
   width: 100%;
-  background: #020617;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 14px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   padding: 11px 42px 11px 14px;
   color: #ffffff;
   font-size: 0.88rem;
@@ -7175,9 +7175,9 @@ html, body {
 }
 
 .change-pwd-input:focus {
-  border-color: #f59e0b;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
-  background: #000000;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  background: #1e293b;
 }
 
 .change-pwd-input::placeholder {
@@ -7211,14 +7211,14 @@ html, body {
   gap: 10px;
   margin-top: 10px;
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .change-pwd-btn-cancel {
-  padding: 10px 16px;
-  border-radius: 12px;
+  padding: 10px 18px;
+  border-radius: 10px;
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #94a3b8;
   background: transparent;
   border: 1px solid transparent;
@@ -7232,25 +7232,26 @@ html, body {
 }
 
 .change-pwd-btn-submit {
-  padding: 11px 20px;
-  border-radius: 12px;
-  font-size: 0.84rem;
-  font-weight: 900;
-  color: #0f172a;
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2563eb;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
   transition: all 0.15s ease;
 }
 
 .change-pwd-btn-submit:hover:not(:disabled) {
-  filter: brightness(1.1);
+  background: #1d4ed8;
+  filter: brightness(1.05);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
 }
 
 .change-pwd-btn-submit:active:not(:disabled) {
@@ -7269,7 +7270,7 @@ html, body {
 
   .change-pwd-card {
     padding: 20px 18px;
-    border-radius: 20px;
+    border-radius: 18px;
     max-width: calc(100vw - 24px);
   }
 
@@ -7289,7 +7290,7 @@ html, body {
   .change-pwd-icon-wrap {
     width: 38px;
     height: 38px;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .change-pwd-icon-wrap svg {
@@ -7310,13 +7311,13 @@ html, body {
   }
 
   .change-pwd-label {
-    font-size: 0.70rem;
+    font-size: 0.78rem;
   }
 
   .change-pwd-input {
     padding: 10px 38px 10px 12px;
     font-size: 0.84rem;
-    border-radius: 12px;
+    border-radius: 10px;
     height: 42px;
   }
 
@@ -7335,7 +7336,7 @@ html, body {
     height: 42px;
     padding: 0 14px;
     font-size: 0.82rem;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .change-pwd-btn-cancel {
@@ -7344,7 +7345,7 @@ html, body {
     height: 42px;
     padding: 0 12px;
     font-size: 0.82rem;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
 }

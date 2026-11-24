@@ -90,7 +90,7 @@ export const GeneralFields: React.FC<GeneralFieldsProps> = ({
         {/* 3. Fecha con Custom DatePicker */}
         <div className="field-item">
           <label>
-            <span>Fecha de auditoría</span>
+            <span>Fecha de auditoría <span className="req-star">*</span></span>
           </label>
           <CustomDatePicker
             value={fields.f_fecha}

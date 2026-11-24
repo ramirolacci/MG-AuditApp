@@ -194,7 +194,7 @@ export const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({
           {/* Current Password */}
           <div className="change-pwd-field">
             <label className="change-pwd-label">
-              Contraseña Actual
+              Contraseña actual <span className="req-star">*</span>
             </label>
             <div className="change-pwd-input-wrap">
               <input
@@ -218,7 +218,7 @@ export const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({
           {/* New Password */}
           <div className="change-pwd-field">
             <label className="change-pwd-label">
-              Nueva Contraseña
+              Nueva contraseña <span className="req-star">*</span>
             </label>
             <div className="change-pwd-input-wrap">
               <input
@@ -242,7 +242,7 @@ export const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({
           {/* Confirm New Password */}
           <div className="change-pwd-field">
             <label className="change-pwd-label">
-              Confirmar Nueva Contraseña
+              Confirmar nueva contraseña <span className="req-star">*</span>
             </label>
             <div className="change-pwd-input-wrap">
               <input
