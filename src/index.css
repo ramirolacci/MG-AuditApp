@@ -3,9 +3,9 @@
    ========================================================================== */
 
 :root {
-  /* Slate / Dark Backgrounds */
-  --bg: #0b0f19;
-  --bg-gradient: linear-gradient(180deg, #070a11 0%, #0b0f19 100%);
+  /* Corporate Deep Navy Backgrounds (Auditoría Experience) */
+  --bg: #14213d;
+  --bg-gradient: linear-gradient(180deg, #111f39 0%, #162640 45%, #1b2b4c 100%);
   --surface: #131b2e;
   --surface-hover: #19233c;
   --surface-2: #1e293b;
@@ -79,7 +79,7 @@ html {
   height: 100%;
   color-scheme: dark;
   scrollbar-width: thin;
-  scrollbar-color: #1e293b #0b0f19;
+  scrollbar-color: #1e293b #111f39;
 }
 
 /* CUSTOM DARK SCROLLBAR */
@@ -89,13 +89,13 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b0f19;
+  background: #111f39;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
   border-radius: 9999px;
-  border: 2px solid #0b0f19;
+  border: 2px solid #111f39;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -6617,7 +6617,7 @@ html, body {
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% 20%, #131b2e 0%, #070a11 100%);
+  background: radial-gradient(circle at 50% 20%, #162640 0%, #111f39 100%);
 }
 
 .login-card-container {
