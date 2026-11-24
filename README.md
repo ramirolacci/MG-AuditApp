@@ -25,30 +25,44 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="public/screenshots/Screenshot_1.png" alt="Portal de Acceso" width="100%" />
+      <img src="public/screenshots/Screenshot_5.png" alt="Acceso Corporativo & Autenticación" width="100%" />
       <br />
       <b>🔐 Acceso Corporativo & Autenticación</b>
-      <p><i>Ingreso seguro con perfiles por rol y credenciales institucionales.</i></p>
+      <p><i>Ingreso seguro con perfiles por rol, validación de credenciales y estética Dark Navy.</i></p>
     </td>
     <td width="50%" align="center">
-      <img src="public/screenshots/Screenshot_2.png" alt="Evaluación Operativa" width="100%" />
+      <img src="public/screenshots/Screenshot_6.png" alt="Configuración de Sucursal" width="100%" />
       <br />
-      <b>📋 Evaluación Operativa en Tiempo Real</b>
-      <p><i>Navegación dinámica por fases, scoring en vivo y carga de evidencias.</i></p>
+      <b>🏬 Configuración de Sucursal (Nivel 0)</b>
+      <p><i>Carga de datos de la tienda, auditor responsable, fecha y métricas operativas de inicio.</i></p>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="public/screenshots/Screenshot_3.png" alt="Historial Centralizado" width="100%" />
+      <img src="public/screenshots/Screenshot_7.png" alt="Evaluación Operativa" width="100%" />
       <br />
-      <b>🗂️ Historial Centralizado & Filtros</b>
-      <p><i>Búsqueda instantánea por tienda, fecha o auditor con badges de estado.</i></p>
+      <b>📋 Evaluación Operativa en Tiempo Real</b>
+      <p><i>Navegación dinámica por fases estandarizadas, scoring en vivo y control de desvíos.</i></p>
     </td>
     <td width="50%" align="center">
-      <img src="public/screenshots/Screenshot_4.png" alt="Diagnóstico y Métricas" width="100%" />
+      <img src="public/screenshots/Screenshot_8.png" alt="Historial Centralizado" width="100%" />
       <br />
-      <b>📊 Diagnóstico de Salud Operativa & KPIs</b>
-      <p><i>Desglose por fase, ponderaciones y reporte de hallazgos para planes de acción.</i></p>
+      <b>🗂️ Historial Centralizado & Filtros</b>
+      <p><i>Búsqueda instantánea por tienda, fecha o auditor con badges de estado y trazabilidad.</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="public/screenshots/Screenshot_9.png" alt="Dashboard Ejecutivo" width="100%" />
+      <br />
+      <b>📊 Dashboard Ejecutivo & Salud Operativa</b>
+      <p><i>Diagnóstico integral de la red: tiendas críticas, para revisión, aprobadas y sin auditar.</i></p>
+    </td>
+    <td width="50%" align="center">
+      <img src="public/screenshots/Screenshot_10.png" alt="Cambio de Contraseña" width="100%" />
+      <br />
+      <b>🔒 Gestión de Seguridad & Claves</b>
+      <p><i>Modal de cambio de contraseña con validación de campos obligatorios y desenfoque sutil.</i></p>
     </td>
   </tr>
 </table>
